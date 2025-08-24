@@ -63,7 +63,7 @@ export default function HeroSection() {
         />
       </div>
 
-    <div className="relative z-10 max-w-7xl mx-auto container-padding pt-20">
+    <div className="relative z-10 max-w-7xl mx-auto container-padding pt-20 sm:flex sm:flex-col sm:pt-[26px]">
   <div className="text-center">
           {/* Trust Indicators */}
           <motion.div
@@ -156,4 +156,4 @@ export default function HeroSection() {
       </div>
     </section>
   )
-} 
+}
