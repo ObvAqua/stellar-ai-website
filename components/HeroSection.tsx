@@ -64,11 +64,6 @@ export default function HeroSection() {
       </div>
 
     <div className="relative z-10 max-w-7xl mx-auto container-padding pt-20 sm:flex sm:flex-col sm:pt-[26px]">
-        <button
-          className="all-unset flex flex-col relative ml-5 appearance-none bg-black text-white rounded-[4px] text-center cursor-pointer p-[15px_25px] sm:ml-auto sm:bg-[url('https://cdn-icons-png.flaticon.com/512/10080/10080458.png')] sm:bg-no-repeat sm:bg-center sm:bg-cover sm:bg-transparent sm:h-[30px] sm:flex-grow-0 sm:w-[30px] sm:self-center"
-        >
-          <div></div>
-        </button>
   <div className="text-center">
           {/* Trust Indicators */}
           <motion.div
