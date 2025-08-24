@@ -137,7 +137,7 @@ export default function HeroSection() {
         className="text-center group"
               >
         <div className="flex justify-center mb-3">
-                  <div className={`w-20 h-20 ${stat.color} bg-white rounded-2xl flex items-center justify-center shadow-md group-hover:shadow-lg transition-shadow duration-300`}>
+                  <div className={`w-20 h-20 ${stat.color} bg-white rounded-2xl flex items-center justify-center shadow-md group-hover:shadow-lg transition-shadow duration-300 sm:w-[70px]`}>
                     <stat.icon className="w-10 h-10" />
                   </div>
                 </div>
