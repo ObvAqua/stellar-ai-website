@@ -145,7 +145,7 @@ export default function ContactSection() {
                       required
                       value={formData.name}
                       onChange={(e) => handleInputChange('name', e.target.value)}
-                      className="w-full px-4 py-4 border border-gray-200 rounded-xl focus:ring-4 focus:ring-primary-500/20 focus:border-primary-500 transition-all duration-200 text-lg"
+                      className="w-full px-4 py-3 sm:py-4 border border-gray-200 rounded-xl focus:ring-4 focus:ring-primary-500/20 focus:border-primary-500 transition-all duration-200 text-base sm:text-lg"
                       placeholder="Your name"
                       aria-invalid={!!errors.name}
                       aria-describedby="name-error"
@@ -162,7 +162,7 @@ export default function ContactSection() {
                       required
                       value={formData.email}
                       onChange={(e) => handleInputChange('email', e.target.value)}
-                      className="w-full px-4 py-4 border border-gray-200 rounded-xl focus:ring-4 focus:ring-primary-500/20 focus:border-primary-500 transition-all duration-200 text-lg"
+                      className="w-full px-4 py-3 sm:py-4 border border-gray-200 rounded-xl focus:ring-4 focus:ring-primary-500/20 focus:border-primary-500 transition-all duration-200 text-base sm:text-lg"
                       placeholder="your@email.com"
                       aria-invalid={!!errors.email}
                       aria-describedby="email-error"
@@ -181,7 +181,7 @@ export default function ContactSection() {
                       type="tel"
                       value={formData.phone}
                       onChange={(e) => handleInputChange('phone', e.target.value)}
-                      className="w-full px-4 py-4 border border-gray-200 rounded-xl focus:ring-4 focus:ring-primary-500/20 focus:border-primary-500 transition-all duration-200 text-lg"
+                      className="w-full px-4 py-3 sm:py-4 border border-gray-200 rounded-xl focus:ring-4 focus:ring-primary-500/20 focus:border-primary-500 transition-all duration-200 text-base sm:text-lg"
                       placeholder="(555) 123-4567"
                       aria-invalid={!!errors.phone}
                       aria-describedby="phone-error"
@@ -197,7 +197,7 @@ export default function ContactSection() {
                       type="text"
                       value={formData.practiceName}
                       onChange={(e) => handleInputChange('practiceName', e.target.value)}
-                      className="w-full px-4 py-4 border border-gray-200 rounded-xl focus:ring-4 focus:ring-primary-500/20 focus:border-primary-500 transition-all duration-200 text-lg"
+                      className="w-full px-4 py-3 sm:py-4 border border-gray-200 rounded-xl focus:ring-4 focus:ring-primary-500/20 focus:border-primary-500 transition-all duration-200 text-base sm:text-lg"
                       placeholder="Your Practice Name"
                     />
                   </div>
@@ -211,7 +211,7 @@ export default function ContactSection() {
                     id="practiceSize"
                     value={formData.practiceSize}
                     onChange={(e) => handleInputChange('practiceSize', e.target.value)}
-                    className="w-full px-4 py-4 border border-gray-200 rounded-xl focus:ring-4 focus:ring-primary-500/20 focus:border-primary-500 transition-all duration-200 text-lg"
+                    className="w-full px-4 py-3 sm:py-4 border border-gray-200 rounded-xl focus:ring-4 focus:ring-primary-500/20 focus:border-primary-500 transition-all duration-200 text-base sm:text-lg"
                   >
                     <option value="">Select practice size</option>
                     {practiceSizes.map((size) => (
