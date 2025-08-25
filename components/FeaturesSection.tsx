@@ -140,7 +140,7 @@ const scrollRight = () => {
             </span>{' '}
             Practices
           </h2>
-          <p className="text-xl md:text-2xl text-gray-600 max-w-4xl mx-auto text-balance leading-relaxed">
+          <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-gray-600 max-w-4xl mx-auto text-balance leading-relaxed">
             Our AI voice agents handle every aspect of patient communication, 
             from initial booking to follow-up care, ensuring nothing falls through the cracks.
           </p>
