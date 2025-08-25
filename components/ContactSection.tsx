@@ -127,7 +127,7 @@ export default function ContactSection() {
                 <Calendar className="w-6 h-6 text-white" />
               </div>
               <div>
-                <h3 className="text-3xl font-bold text-gray-900">Book Your Free Demo</h3>
+                <h3 className="text-xl sm:text-2xl md:text-3xl font-bold text-gray-900">Book Your Free Demo</h3>
                 <p className="text-gray-600 mt-1">Get started in under 2 minutes</p>
               </div>
             </div>
