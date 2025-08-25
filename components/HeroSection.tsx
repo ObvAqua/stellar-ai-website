@@ -63,8 +63,8 @@ export default function HeroSection() {
         />
       </div>
 
-    <div className="relative z-10 max-w-7xl mx-auto pt-20 md:pt-[26px] px-4 md:px-6 flex flex-col">
-  <div className="text-center w-screen ml-[calc(50%-50vw)] flex flex-col">
+    <div className="relative z-10 max-w-7xl mx-auto pt-20 md:pt-[26px] container-padding flex flex-col">
+  <div className="text-center max-w-full mx-auto flex flex-col">
           {/* Trust Indicators */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -80,8 +80,7 @@ export default function HeroSection() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay: 0.2 }}
-            className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6 leading-tight text-left mx-auto ml-4 md:ml-[70px]"
-            style={{letterSpacing: '-0.96px', font: '700 48px/48px Poppins, system-ui, -apple-system, sans-serif'}}
+            className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6 leading-tight text-left mx-auto"
           >
             Say hello to <span className="text-gradient">Stellar</span>
             <br />
@@ -93,8 +92,7 @@ export default function HeroSection() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
-            className="text-base md:text-lg lg:text-xl text-gray-700 mb-10 max-w-[770px] leading-relaxed text-balance w-auto self-start text-left ml-4 md:ml-[71px]"
-            style={{fontSize: '20px', lineHeight: '28px'}}
+            className="text-sm sm:text-base md:text-lg lg:text-xl text-gray-700 mb-10 max-w-[770px] leading-relaxed text-balance w-auto self-start text-left"
           >
             Stellar handles 60% of your admin workload and improves your clinic’s functionality - save time to focus on what matters most
           </motion.p>
@@ -104,20 +102,19 @@ export default function HeroSection() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.6 }}
-            className="flex items-center gap-4 justify-start mb-9 ml-4 md:ml-[71px]"
+            className="flex flex-col sm:flex-row items-center gap-4 justify-start mb-9"
           >
             <motion.button
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="btn-primary text-base px-7 py-4 shadow-lg rounded-lg"
+              className="btn-primary text-sm sm:text-base px-6 sm:px-7 py-3 sm:py-4 shadow-lg rounded-lg w-full sm:w-auto"
             >
               Book a Demo
             </motion.button>
             <motion.button
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="btn-secondary text-base flex items-center justify-center shadow-md rounded-lg"
-              style={{padding: '16px 23px 16px 20px'}}
+              className="btn-secondary text-sm sm:text-base flex items-center justify-center shadow-md rounded-lg px-5 sm:px-6 py-3 sm:py-4 w-full sm:w-auto"
             >
               <Play className="w-5 h-5 flex flex-col justify-center items-center" />
               <span className="ml-2.5">Watch Now</span>
@@ -125,23 +122,23 @@ export default function HeroSection() {
           </motion.div>
 
           {/* Trust Indicators */}
-          <div className="flex flex-row flex-wrap gap-3 relative h-auto pb-[30px] mt-5 mx-auto ml-4 md:ml-[78px]">
-            <div className="flex items-center bg-green-50 rounded-full text-gray-600 text-xs font-medium leading-4 px-3 py-1.5">
+          <div className="flex flex-row flex-wrap gap-2 sm:gap-3 relative h-auto pb-[30px] mt-5 mx-auto justify-center sm:justify-start">
+            <div className="flex items-center bg-green-50 rounded-full text-gray-600 text-xs font-medium leading-4 px-2 sm:px-3 py-1 sm:py-1.5">
               <Shield className="w-3 h-3 text-green-600 mr-2" />
               <span className="font-medium">HIPAA Compliant</span>
             </div>
-            <div className="flex items-center bg-blue-50 rounded-full text-gray-600 text-xs font-medium leading-4 gap-2 px-3 py-1.5">
+            <div className="flex items-center bg-blue-50 rounded-full text-gray-600 text-xs font-medium leading-4 gap-2 px-2 sm:px-3 py-1 sm:py-1.5">
               <Clock className="w-3 h-3 text-blue-600" />
               <span className="font-medium">24/7 Available</span>
             </div>
-            <div className="flex items-center bg-amber-50 rounded-full text-gray-600 text-xs font-medium leading-4 gap-1 px-3 py-1.5">
+            <div className="flex items-center bg-amber-50 rounded-full text-gray-600 text-xs font-medium leading-4 gap-1 px-2 sm:px-3 py-1 sm:py-1.5">
               <Star className="w-3 h-3 text-amber-600" />
               <span className="font-medium">4.9/5 Rating</span>
             </div>
           </div>
 
           {/* Statistics */}
-      <div ref={ref} className="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-4xl mb-14 mx-auto">
+      <div ref={ref} className="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6 max-w-4xl mb-14 mx-auto px-4 sm:px-0">
             {stats.map((stat, index) => (
               <motion.div
                 key={stat.label}
@@ -151,11 +148,11 @@ export default function HeroSection() {
         className="text-center group"
               >
         <div className="flex justify-center mb-3">
-                  <div className={`w-20 h-20 ${stat.color} bg-white rounded-2xl flex items-center justify-center shadow-md group-hover:shadow-lg transition-shadow duration-300 sm:w-[70px]`}>
-                    <stat.icon className="w-10 h-10" />
+                  <div className={`w-16 h-16 sm:w-20 sm:h-20 ${stat.color} bg-white rounded-2xl flex items-center justify-center shadow-md group-hover:shadow-lg transition-shadow duration-300`}>
+                    <stat.icon className="w-6 h-6 sm:w-8 sm:h-8 md:w-10 md:h-10" />
                   </div>
                 </div>
-        <div className="text-3xl md:text-4xl font-bold text-gray-900 mb-1.5">
+        <div className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-gray-900 mb-1.5">
                   {inView && (
                     <CountUp
                       end={stat.value}
@@ -165,7 +162,7 @@ export default function HeroSection() {
                   )}
                   {stat.suffix}
                 </div>
-                <div className="text-sm text-gray-600 font-medium">{stat.label}</div>
+                <div className="text-xs sm:text-sm text-gray-600 font-medium text-center">{stat.label}</div>
               </motion.div>
             ))}
           </div>
