@@ -105,19 +105,19 @@ export default function HeroSection() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.6 }}
-            className="flex items-center gap-4 justify-center mb-9"
+            className="flex items-center gap-4 justify-start mb-9 ml-[71px]"
           >
             <motion.button
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="btn-primary text-base px-7 py-4 shadow-lg rounded-lg ml-[71px]"
+              className="btn-primary text-base px-7 py-4 shadow-lg rounded-lg"
             >
               Book a Demo
             </motion.button>
             <motion.button
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="btn-secondary text-base flex items-center justify-center shadow-md rounded-lg ml-[-770px]"
+              className="btn-secondary text-base flex items-center justify-center shadow-md rounded-lg"
               style={{padding: '16px 23px 16px 20px'}}
             >
               <Play className="w-5 h-5 flex flex-col justify-center items-center" />
@@ -126,18 +126,18 @@ export default function HeroSection() {
           </motion.div>
 
           {/* Trust Indicators */}
-          <div className="flex flex-col relative h-auto pb-[30px] mt-5 mx-auto ml-[78px]">
-            <div className="flex items-center bg-green-50 rounded-full text-gray-600 text-xs font-medium leading-4 mr-auto px-3 py-1.5">
+          <div className="flex flex-row gap-3 relative h-auto pb-[30px] mt-5 mx-auto ml-[78px]">
+            <div className="flex items-center bg-green-50 rounded-full text-gray-600 text-xs font-medium leading-4 px-3 py-1.5">
               <Shield className="w-3 h-3 text-green-600 mr-2" />
               <span className="font-medium">HIPAA Compliant</span>
             </div>
-            <div className="flex items-center bg-blue-50 rounded-full text-gray-600 text-xs font-medium leading-4 gap-2 mt-4 mr-auto px-3 py-1.5">
+            <div className="flex items-center bg-blue-50 rounded-full text-gray-600 text-xs font-medium leading-4 gap-2 px-3 py-1.5">
               <Clock className="w-3 h-3 text-blue-600" />
-              <span className="font-medium mr-auto">24/7 Available</span>
+              <span className="font-medium">24/7 Available</span>
             </div>
-            <div className="flex items-center bg-amber-50 rounded-full text-gray-600 text-xs font-medium leading-4 gap-1 justify-start mt-4 mr-auto px-3 py-1.5">
+            <div className="flex items-center bg-amber-50 rounded-full text-gray-600 text-xs font-medium leading-4 gap-1 px-3 py-1.5">
               <Star className="w-3 h-3 text-amber-600" />
-              <span className="font-medium ml-1">4.9/5 Rating</span>
+              <span className="font-medium">4.9/5 Rating</span>
             </div>
           </div>
 
