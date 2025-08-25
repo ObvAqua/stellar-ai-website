@@ -80,7 +80,7 @@ export default function HeroSection() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay: 0.2 }}
-            className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6 leading-tight text-left"
+            className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6 leading-tight text-center sm:text-left"
           >
             Say hello to <span className="text-gradient">Stellar</span>
             <br />
@@ -92,7 +92,7 @@ export default function HeroSection() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
-            className="text-sm sm:text-base md:text-lg lg:text-xl text-gray-700 mb-10 max-w-[770px] leading-relaxed text-balance w-auto self-start text-left"
+            className="text-sm sm:text-base md:text-lg lg:text-xl text-gray-700 mb-10 max-w-[770px] leading-relaxed text-balance w-auto self-center sm:self-start text-center sm:text-left"
           >
             Stellar handles 60% of your admin workload and improves your clinic’s functionality - save time to focus on what matters most
           </motion.p>
@@ -102,7 +102,7 @@ export default function HeroSection() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.6 }}
-            className="flex flex-col sm:flex-row items-center gap-4 justify-start mb-9"
+            className="flex flex-col sm:flex-row items-center gap-4 justify-center sm:justify-start mb-9"
           >
             <motion.button
               whileHover={{ scale: 1.05 }}
