@@ -121,7 +121,7 @@ export default function HeroSection() {
               style={{padding: '16px 23px 16px 20px'}}
             >
               <Play className="w-5 h-5 flex flex-col justify-center items-center" />
-              <span>Watch Now</span>
+              <span className="ml-2.5">Watch Now</span>
             </motion.button>
           </motion.div>
           {/* Statistics */}
