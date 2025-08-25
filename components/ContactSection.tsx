@@ -103,11 +103,11 @@ export default function ContactSection() {
           viewport={{ once: true }}
           className="text-center mb-20"
         >
-          <h2 className="text-4xl md:text-6xl font-bold text-gray-900 mb-8 text-balance">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-gray-900 mb-8 text-balance">
             Ready to{' '}
             <span className="text-gradient">Transform</span> Your Practice?
           </h2>
-          <p className="text-xl md:text-2xl text-gray-600 max-w-4xl mx-auto text-balance leading-relaxed">
+          <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-gray-600 max-w-4xl mx-auto text-balance leading-relaxed">
             Book a free consultation and see how our AI voice agents can reduce your 
             administrative burden while improving patient satisfaction.
           </p>
@@ -120,14 +120,14 @@ export default function ContactSection() {
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 1 }}
             viewport={{ once: true }}
-            className="bg-white rounded-3xl p-10 shadow-2xl border border-gray-100"
+            className="bg-white rounded-3xl p-6 sm:p-8 md:p-10 shadow-2xl border border-gray-100"
           >
             <div className="flex items-center space-x-4 mb-8">
               <div className="w-12 h-12 bg-gradient-to-br from-primary-600 to-primary-700 rounded-xl flex items-center justify-center shadow-lg">
                 <Calendar className="w-6 h-6 text-white" />
               </div>
               <div>
-                <h3 className="text-3xl font-bold text-gray-900">Book Your Free Demo</h3>
+                <h3 className="text-xl sm:text-2xl md:text-3xl font-bold text-gray-900">Book Your Free Demo</h3>
                 <p className="text-gray-600 mt-1">Get started in under 2 minutes</p>
               </div>
             </div>
@@ -145,7 +145,7 @@ export default function ContactSection() {
                       required
                       value={formData.name}
                       onChange={(e) => handleInputChange('name', e.target.value)}
-                      className="w-full px-4 py-4 border border-gray-200 rounded-xl focus:ring-4 focus:ring-primary-500/20 focus:border-primary-500 transition-all duration-200 text-lg"
+                      className="w-full px-4 py-3 sm:py-4 border border-gray-200 rounded-xl focus:ring-4 focus:ring-primary-500/20 focus:border-primary-500 transition-all duration-200 text-base sm:text-lg"
                       placeholder="Your name"
                       aria-invalid={!!errors.name}
                       aria-describedby="name-error"
@@ -162,7 +162,7 @@ export default function ContactSection() {
                       required
                       value={formData.email}
                       onChange={(e) => handleInputChange('email', e.target.value)}
-                      className="w-full px-4 py-4 border border-gray-200 rounded-xl focus:ring-4 focus:ring-primary-500/20 focus:border-primary-500 transition-all duration-200 text-lg"
+                      className="w-full px-4 py-3 sm:py-4 border border-gray-200 rounded-xl focus:ring-4 focus:ring-primary-500/20 focus:border-primary-500 transition-all duration-200 text-base sm:text-lg"
                       placeholder="your@email.com"
                       aria-invalid={!!errors.email}
                       aria-describedby="email-error"
@@ -181,7 +181,7 @@ export default function ContactSection() {
                       type="tel"
                       value={formData.phone}
                       onChange={(e) => handleInputChange('phone', e.target.value)}
-                      className="w-full px-4 py-4 border border-gray-200 rounded-xl focus:ring-4 focus:ring-primary-500/20 focus:border-primary-500 transition-all duration-200 text-lg"
+                      className="w-full px-4 py-3 sm:py-4 border border-gray-200 rounded-xl focus:ring-4 focus:ring-primary-500/20 focus:border-primary-500 transition-all duration-200 text-base sm:text-lg"
                       placeholder="(555) 123-4567"
                       aria-invalid={!!errors.phone}
                       aria-describedby="phone-error"
@@ -197,7 +197,7 @@ export default function ContactSection() {
                       type="text"
                       value={formData.practiceName}
                       onChange={(e) => handleInputChange('practiceName', e.target.value)}
-                      className="w-full px-4 py-4 border border-gray-200 rounded-xl focus:ring-4 focus:ring-primary-500/20 focus:border-primary-500 transition-all duration-200 text-lg"
+                      className="w-full px-4 py-3 sm:py-4 border border-gray-200 rounded-xl focus:ring-4 focus:ring-primary-500/20 focus:border-primary-500 transition-all duration-200 text-base sm:text-lg"
                       placeholder="Your Practice Name"
                     />
                   </div>
@@ -211,7 +211,7 @@ export default function ContactSection() {
                     id="practiceSize"
                     value={formData.practiceSize}
                     onChange={(e) => handleInputChange('practiceSize', e.target.value)}
-                    className="w-full px-4 py-4 border border-gray-200 rounded-xl focus:ring-4 focus:ring-primary-500/20 focus:border-primary-500 transition-all duration-200 text-lg"
+                    className="w-full px-4 py-3 sm:py-4 border border-gray-200 rounded-xl focus:ring-4 focus:ring-primary-500/20 focus:border-primary-500 transition-all duration-200 text-base sm:text-lg"
                   >
                     <option value="">Select practice size</option>
                     {practiceSizes.map((size) => (
@@ -239,7 +239,7 @@ export default function ContactSection() {
                   disabled={isSubmitting}
                   whileHover={{ scale: 1.02 }}
                   whileTap={{ scale: 0.98 }}
-                  className="w-full btn-primary text-lg py-5 disabled:opacity-50 disabled:cursor-not-allowed shadow-xl"
+                  className="w-full btn-primary text-base sm:text-lg py-4 sm:py-5 disabled:opacity-50 disabled:cursor-not-allowed shadow-xl"
                 >
                   {isSubmitting ? (
                     <div className="flex items-center justify-center space-x-3">

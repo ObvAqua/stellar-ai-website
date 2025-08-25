@@ -149,10 +149,6 @@ export default function HowItWorks() {
                       <div className="w-12 h-12 rounded-xl bg-white border border-gray-200 flex items-center justify-center">
                         <step.icon className="w-6 h-6 text-gray-700" />
                       </div>
-                      <div>
-                        <div className="text-sm font-semibold text-gray-900 mb-1">Suggested visual</div>
-                        <p className="text-sm text-gray-600">{step.visualHint}</p>
-                      </div>
                     </div>
                   </div>
                 </div>

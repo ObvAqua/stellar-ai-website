@@ -24,11 +24,13 @@ export default function Navigation() {
   ]
 
   return (
-    <motion.nav
-      initial={{ y: -100 }}
-      animate={{ y: 0 }}
-      className="fixed top-0 left-0 right-0 z-50 bg-white border-b border-gray-200/60 shadow-sm"
-    >
+    <>
+      {/* Desktop/Tablet Navigation Bar */}
+      <motion.nav
+        initial={{ y: -100 }}
+        animate={{ y: 0 }}
+        className="hidden md:block fixed top-0 left-0 right-0 z-50 bg-white border-b border-gray-200/60 shadow-sm"
+      >
       <div className="max-w-7xl mx-auto container-padding">
         <div className="flex items-center h-20">
           {/* Logo */}
@@ -36,12 +38,7 @@ export default function Navigation() {
             whileHover={{ scale: 1.05 }}
             className="flex items-center space-x-3"
           >
-            <div className="w-10 h-10 bg-gradient-to-br from-primary-600 to-primary-700 rounded-xl flex items-center justify-center shadow-lg">
-              <Mic className="w-6 h-5.5 text-white" />
-            </div>
-            <div className="flex flex-col">
-              <span className="text-xl font-bold text-gray-900">Stellar AI</span>
-              <span className="text-xs text-gray-500 font-medium">Healthcare Solutions</span>
+            <div className="flex flex-col ml-3">
             </div>
           </motion.div>
 
@@ -59,24 +56,9 @@ export default function Navigation() {
               </motion.a>
             ))}
             
-            {/* Trust Indicators */}
-            <div className="flex items-center space-x-6 ml-8 pl-8 border-l border-gray-200">
-              <div className="flex items-center space-x-2 text-xs text-gray-600 bg-green-50 px-3 py-1.5 rounded-full">
-                <Shield className="w-3 h-3 text-green-600" />
-                <span className="font-medium">HIPAA Compliant</span>
-              </div>
-              <div className="flex items-center space-x-2 text-xs text-gray-600 bg-blue-50 px-3 py-1.5 rounded-full">
-                <Clock className="w-3 h-3 text-blue-600" />
-                <span className="font-medium">24/7 Available</span>
-              </div>
-              <div className="flex items-center space-x-1 text-xs text-gray-600 bg-amber-50 px-3 py-1.5 rounded-full">
-                <Star className="w-3 h-3 text-amber-600" />
-                <span className="font-medium">4.9/5 Rating</span>
-              </div>
-            </div>
           </div>
 
-          {/* Mobile menu button */}
+          {/* Tablet menu button */}
           <div className="lg:hidden ml-auto">
             <motion.button
               aria-label={isOpen ? "Close menu" : "Open menu"}
@@ -91,6 +73,21 @@ export default function Navigation() {
           </div>
         </div>
       </div>
+      </motion.nav>
+
+      {/* Mobile Menu Button (floating) */}
+      <div className="md:hidden fixed top-4 right-4 z-50">
+        <motion.button
+          aria-label={isOpen ? "Close menu" : "Open menu"}
+          aria-expanded={isOpen}
+          aria-controls="mobile-menu"
+          whileTap={{ scale: 0.95 }}
+          onClick={() => setIsOpen(!isOpen)}
+          className="bg-white text-gray-700 hover:text-primary-600 p-3 rounded-xl shadow-lg hover:shadow-xl transition-all duration-200 border border-gray-200"
+        >
+          {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+        </motion.button>
+      </div>
 
       {/* Mobile Navigation */}
       <AnimatePresence>
@@ -100,7 +97,7 @@ export default function Navigation() {
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: 'auto' }}
             exit={{ opacity: 0, height: 0 }}
-            className="lg:hidden bg-white border-t border-gray-200 shadow-xl"
+            className="md:hidden bg-white border border-gray-200 shadow-xl rounded-xl mx-4 mt-20"
           >
             <div className="container-padding py-6 space-y-4">
               {navItems.map((item) => (
@@ -134,6 +131,6 @@ export default function Navigation() {
           </motion.div>
         )}
       </AnimatePresence>
-    </motion.nav>
+    </>
   )
 }
