@@ -117,7 +117,8 @@ export default function HeroSection() {
             <motion.button
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="btn-secondary text-base px-7 py-4.5 flex items-center space-x-2.5 shadow-md rounded-lg sm:mx-auto"
+              className="btn-secondary text-base flex items-center justify-center shadow-md rounded-lg ml-[-770px]"
+              style={{padding: '16px 23px 16px 20px'}}
             >
               <Play className="w-5 h-5" />
               <span>Watch Now</span>
