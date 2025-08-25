@@ -94,7 +94,8 @@ export default function HeroSection() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
-            className="text-base md:text-lg lg:text-xl text-gray-700 mb-10 max-w-4xl leading-relaxed text-balance"
+            className="text-base md:text-lg lg:text-xl text-gray-700 mb-10 max-w-[770px] leading-relaxed text-balance w-auto self-start text-left ml-[71px]"
+            style={{fontSize: '20px', lineHeight: '28px'}}
           >
             Stellar handles 60% of your admin workload and improves your clinic’s functionality - save time to focus on what matters most
           </motion.p>
