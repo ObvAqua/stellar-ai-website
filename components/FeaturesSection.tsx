@@ -126,7 +126,7 @@ const scrollRight = () => {
           viewport={{ once: true }}
           className="text-center mb-20"
         >
-          <h2 className="text-4xl md:text-6xl font-bold text-gray-900 mb-8 text-balance">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-gray-900 mb-8 text-balance">
             Trusted by{' '}
             <span className="relative inline-block">
               <span className="text-gradient">Forward-Thinking</span>
