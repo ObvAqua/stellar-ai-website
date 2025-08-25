@@ -110,7 +110,7 @@ export default function HeroSection() {
             <motion.button
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="btn-primary text-base px-7 py-4.8 shadow-lg rounded-lg sm:mx-auto"
+              className="btn-primary text-base px-7 py-4 shadow-lg rounded-lg ml-[71px]"
             >
               Book a Demo
             </motion.button>
