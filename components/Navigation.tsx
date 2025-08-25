@@ -24,13 +24,15 @@ export default function Navigation() {
   ]
 
   return (
-    <motion.nav
-      initial={{ y: -100 }}
-      animate={{ y: 0 }}
-      className="fixed top-0 left-0 right-0 z-50 bg-white border-b border-gray-200/60 shadow-sm"
-    >
+    <>
+      {/* Desktop/Tablet Navigation Bar */}
+      <motion.nav
+        initial={{ y: -100 }}
+        animate={{ y: 0 }}
+        className="hidden md:block fixed top-0 left-0 right-0 z-50 bg-white border-b border-gray-200/60 shadow-sm"
+      >
       <div className="max-w-7xl mx-auto container-padding">
-        <div className="flex items-center h-20 lg:flex sm:hidden">
+        <div className="flex items-center h-20">
           {/* Logo */}
           <motion.div
             whileHover={{ scale: 1.05 }}
@@ -56,7 +58,7 @@ export default function Navigation() {
             
           </div>
 
-          {/* Mobile menu button */}
+          {/* Tablet menu button */}
           <div className="lg:hidden ml-auto">
             <motion.button
               aria-label={isOpen ? "Close menu" : "Open menu"}
@@ -71,6 +73,21 @@ export default function Navigation() {
           </div>
         </div>
       </div>
+      </motion.nav>
+
+      {/* Mobile Menu Button (floating) */}
+      <div className="md:hidden fixed top-4 right-4 z-50">
+        <motion.button
+          aria-label={isOpen ? "Close menu" : "Open menu"}
+          aria-expanded={isOpen}
+          aria-controls="mobile-menu"
+          whileTap={{ scale: 0.95 }}
+          onClick={() => setIsOpen(!isOpen)}
+          className="bg-white text-gray-700 hover:text-primary-600 p-3 rounded-xl shadow-lg hover:shadow-xl transition-all duration-200 border border-gray-200"
+        >
+          {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+        </motion.button>
+      </div>
 
       {/* Mobile Navigation */}
       <AnimatePresence>
@@ -80,7 +97,7 @@ export default function Navigation() {
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: 'auto' }}
             exit={{ opacity: 0, height: 0 }}
-            className="lg:hidden bg-white border-t border-gray-200 shadow-xl"
+            className="md:hidden bg-white border border-gray-200 shadow-xl rounded-xl mx-4 mt-20"
           >
             <div className="container-padding py-6 space-y-4">
               {navItems.map((item) => (
@@ -114,6 +131,6 @@ export default function Navigation() {
           </motion.div>
         )}
       </AnimatePresence>
-    </motion.nav>
+    </>
   )
 }
