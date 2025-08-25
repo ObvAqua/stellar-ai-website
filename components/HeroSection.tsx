@@ -63,7 +63,7 @@ export default function HeroSection() {
         />
       </div>
 
-    <div className="relative z-10 max-w-7xl mx-auto pt-[26px] flex flex-col">
+    <div className="relative z-10 max-w-7xl mx-auto pt-20 md:pt-[26px] px-4 md:px-6 flex flex-col">
   <div className="text-center w-screen ml-[calc(50%-50vw)] flex flex-col">
           {/* Trust Indicators */}
           <motion.div
@@ -80,13 +80,12 @@ export default function HeroSection() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay: 0.2 }}
-            className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6 text-balance leading-tight flex flex-row justify-start flex-wrap gap-2.5 text-left mx-auto ml-[70px]"
+            className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6 leading-tight text-left mx-auto ml-4 md:ml-[70px]"
             style={{letterSpacing: '-0.96px', font: '700 48px/48px Poppins, system-ui, -apple-system, sans-serif'}}
           >
-            Say hello to {' '}
-            <span className="text-gradient">Stellar </span>
+            Say hello to <span className="text-gradient">Stellar</span>
             <br />
-            <span>Your new receptionist copilot</span>
+            Your new receptionist copilot
           </motion.h1>
 
           {/* Subheadline */}
@@ -94,7 +93,7 @@ export default function HeroSection() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
-            className="text-base md:text-lg lg:text-xl text-gray-700 mb-10 max-w-[770px] leading-relaxed text-balance w-auto self-start text-left ml-[71px]"
+            className="text-base md:text-lg lg:text-xl text-gray-700 mb-10 max-w-[770px] leading-relaxed text-balance w-auto self-start text-left ml-4 md:ml-[71px]"
             style={{fontSize: '20px', lineHeight: '28px'}}
           >
             Stellar handles 60% of your admin workload and improves your clinic’s functionality - save time to focus on what matters most
@@ -105,7 +104,7 @@ export default function HeroSection() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.6 }}
-            className="flex items-center gap-4 justify-start mb-9 ml-[71px]"
+            className="flex items-center gap-4 justify-start mb-9 ml-4 md:ml-[71px]"
           >
             <motion.button
               whileHover={{ scale: 1.05 }}
@@ -126,7 +125,7 @@ export default function HeroSection() {
           </motion.div>
 
           {/* Trust Indicators */}
-          <div className="flex flex-row gap-3 relative h-auto pb-[30px] mt-5 mx-auto ml-[78px]">
+          <div className="flex flex-row flex-wrap gap-3 relative h-auto pb-[30px] mt-5 mx-auto ml-4 md:ml-[78px]">
             <div className="flex items-center bg-green-50 rounded-full text-gray-600 text-xs font-medium leading-4 px-3 py-1.5">
               <Shield className="w-3 h-3 text-green-600 mr-2" />
               <span className="font-medium">HIPAA Compliant</span>
