@@ -209,12 +209,12 @@ const scrollRight = () => {
                 </h3>
 
                 {/* Description */}
-                <p className="text-gray-600 mb-6 leading-relaxed text-base">
+                <p className="text-gray-600 mb-4 sm:mb-6 leading-relaxed text-sm sm:text-base">
                   {feature.description}
                 </p>
 
                 {/* Benefits */}
-                <div className="space-y-3">
+                <div className="space-y-2 sm:space-y-3">
                   {feature.benefits.map((benefit, benefitIndex) => (
                     <motion.div
                       key={benefit}
@@ -223,8 +223,8 @@ const scrollRight = () => {
                       transition={{ delay: index * 0.05 + benefitIndex * 0.03 }}
                       className="flex items-center space-x-2 text-gray-700"
                     >
-                      <CheckCircle className="w-4 h-4 text-success-500 flex-shrink-0" />
-                      <span className="text-sm font-medium">{benefit}</span>
+                      <CheckCircle className="w-3 h-3 sm:w-4 sm:h-4 text-success-500 flex-shrink-0" />
+                      <span className="text-xs sm:text-sm font-medium">{benefit}</span>
                     </motion.div>
                   ))}
                 </div>
