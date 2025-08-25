@@ -148,35 +148,35 @@ const scrollRight = () => {
 
 
         {/* Features Grid */}
-           <div className="relative w-[calc(100vw-2rem)] sm:w-[calc(100vw-4rem)] lg:w-[calc(100vw-6rem)] left-1/2 -translate-x-1/2">
+           <div className="relative w-[calc(100vw-3rem)] sm:w-[calc(100vw-4rem)] lg:w-[calc(100vw-6rem)] left-1/2 -translate-x-1/2">
            
            {/*Edge fade overlays */}
            {/* Left edge overlay */}
            <div 
            aria-hidden="true"
-           className="pointer-events-none absolute inset-y-0 left-0 w-24 sm:w-32 lg:w-40 z-20 bg-gradient-to-r from-white via-white/60 via-white/30 to-transparent edge-overlay-left"
+           className="pointer-events-none absolute inset-y-0 left-0 w-16 sm:w-24 md:w-32 lg:w-40 z-20 bg-gradient-to-r from-white via-white/60 via-white/30 to-transparent edge-overlay-left"
            />
            {/* Right edge overlay */}
            <div
              aria-hidden="true"
-             className="pointer-events-none absolute inset-y-0 right-0 w-24 sm:w-32 lg:w-40 z-20 bg-gradient-to-l from-white via-white/60 via-white/30 to-transparent edge-overlay-right"
+             className="pointer-events-none absolute inset-y-0 right-0 w-16 sm:w-24 md:w-32 lg:w-40 z-20 bg-gradient-to-l from-white via-white/60 via-white/30 to-transparent edge-overlay-right"
            />
 
           {/* Scroll Buttons */}
           <button
             onClick={scrollLeft}
-            className="absolute left-2 sm:left-4 top-1/2 -translate-y-1/2 z-20 bg-white shadow-lg rounded-full p-3 hover:shadow-xl transition-all duration-300 hover:scale-110 border border-gray-200"
+            className="absolute left-1 sm:left-2 md:left-4 top-1/2 -translate-y-1/2 z-20 bg-white shadow-lg rounded-full p-2 sm:p-3 hover:shadow-xl transition-all duration-300 hover:scale-110 border border-gray-200"
             aria-label="Scroll left"
           >
-            <ChevronLeft className="w-6 h-6 text-gray-700" />
+            <ChevronLeft className="w-5 h-5 sm:w-6 sm:h-6 text-gray-700" />
           </button>
 
           <button
             onClick={scrollRight}
-            className="absolute right-2 sm:right-4 top-1/2 -translate-y-1/2 z-20 bg-white shadow-lg rounded-full p-3 hover:shadow-xl transition-all duration-300 hover:scale-110 border border-gray-200"
+            className="absolute right-1 sm:right-2 md:right-4 top-1/2 -translate-y-1/2 z-20 bg-white shadow-lg rounded-full p-2 sm:p-3 hover:shadow-xl transition-all duration-300 hover:scale-110 border border-gray-200"
             aria-label="Scroll right"
           >
-            <ChevronRight className="w-6 h-6 text-gray-700" />
+            <ChevronRight className="w-5 h-5 sm:w-6 sm:h-6 text-gray-700" />
           </button>
 
           {/* Scrollable Container */}
