@@ -64,7 +64,7 @@ export default function HeroSection() {
       </div>
 
     <div className="relative z-10 max-w-7xl mx-auto pt-[26px] flex flex-col">
-  <div className="text-center">
+  <div className="text-center w-screen ml-[calc(50%-50vw)] flex flex-col">
           {/* Trust Indicators */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
