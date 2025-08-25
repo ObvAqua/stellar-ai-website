@@ -120,7 +120,7 @@ export default function HeroSection() {
               className="btn-secondary text-base flex items-center justify-center shadow-md rounded-lg ml-[-770px]"
               style={{padding: '16px 23px 16px 20px'}}
             >
-              <Play className="w-5 h-5" />
+              <Play className="w-5 h-5 flex flex-col justify-center items-center" />
               <span>Watch Now</span>
             </motion.button>
           </motion.div>
