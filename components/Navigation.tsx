@@ -54,21 +54,6 @@ export default function Navigation() {
               </motion.a>
             ))}
             
-            {/* Trust Indicators */}
-            <div className="flex items-center space-x-6 ml-8 pl-8 border-l border-gray-200">
-              <div className="flex items-center space-x-2 text-xs text-gray-600 bg-green-50 px-3 py-1.5 rounded-full">
-                <Shield className="w-3 h-3 text-green-600" />
-                <span className="font-medium">HIPAA Compliant</span>
-              </div>
-              <div className="flex items-center space-x-2 text-xs text-gray-600 bg-blue-50 px-3 py-1.5 rounded-full">
-                <Clock className="w-3 h-3 text-blue-600" />
-                <span className="font-medium">24/7 Available</span>
-              </div>
-              <div className="flex items-center space-x-1 text-xs text-gray-600 bg-amber-50 px-3 py-1.5 rounded-full">
-                <Star className="w-3 h-3 text-amber-600" />
-                <span className="font-medium">4.9/5 Rating</span>
-              </div>
-            </div>
           </div>
 
           {/* Mobile menu button */}
