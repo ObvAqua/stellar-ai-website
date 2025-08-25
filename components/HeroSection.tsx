@@ -124,6 +124,23 @@ export default function HeroSection() {
               <span className="ml-2.5">Watch Now</span>
             </motion.button>
           </motion.div>
+
+          {/* Trust Indicators */}
+          <div className="flex flex-col relative h-auto pb-[30px] mt-5 mx-auto ml-[78px]">
+            <div className="flex items-center bg-green-50 rounded-full text-gray-600 text-xs font-medium leading-4 mr-auto px-3 py-1.5">
+              <Shield className="w-3 h-3 text-green-600 mr-2" />
+              <span className="font-medium">HIPAA Compliant</span>
+            </div>
+            <div className="flex items-center bg-blue-50 rounded-full text-gray-600 text-xs font-medium leading-4 gap-2 mt-4 mr-auto px-3 py-1.5">
+              <Clock className="w-3 h-3 text-blue-600" />
+              <span className="font-medium mr-auto">24/7 Available</span>
+            </div>
+            <div className="flex items-center bg-amber-50 rounded-full text-gray-600 text-xs font-medium leading-4 gap-1 justify-start mt-4 mr-auto px-3 py-1.5">
+              <Star className="w-3 h-3 text-amber-600" />
+              <span className="font-medium ml-1">4.9/5 Rating</span>
+            </div>
+          </div>
+
           {/* Statistics */}
       <div ref={ref} className="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-4xl mb-14 mx-auto">
             {stats.map((stat, index) => (
