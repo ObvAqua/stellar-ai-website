@@ -80,7 +80,8 @@ export default function HeroSection() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay: 0.2 }}
-            className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6 text-balance leading-tight"
+            className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6 text-balance leading-tight flex flex-row justify-start flex-wrap gap-2.5 text-left mx-auto ml-[70px]"
+            style={{letterSpacing: '-0.96px', font: '700 48px/48px Poppins, system-ui, -apple-system, sans-serif'}}
           >
             Say hello to {' '}
             <span className="text-gradient">Stellar </span>
