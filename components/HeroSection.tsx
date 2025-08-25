@@ -3,7 +3,7 @@
 import { motion } from 'framer-motion'
 import { useInView } from 'react-intersection-observer'
 import CountUp from 'react-countup'
-import { Play, Users, TrendingUp, CheckCircle, Clock } from 'lucide-react'
+import { Play, Users, TrendingUp, CheckCircle, Clock, Shield, Star } from 'lucide-react'
 
 export default function HeroSection() {
   const [ref, inView] = useInView({
