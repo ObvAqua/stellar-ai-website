@@ -120,7 +120,7 @@ export default function ContactSection() {
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 1 }}
             viewport={{ once: true }}
-            className="bg-white rounded-3xl p-10 shadow-2xl border border-gray-100"
+            className="bg-white rounded-3xl p-6 sm:p-8 md:p-10 shadow-2xl border border-gray-100"
           >
             <div className="flex items-center space-x-4 mb-8">
               <div className="w-12 h-12 bg-gradient-to-br from-primary-600 to-primary-700 rounded-xl flex items-center justify-center shadow-lg">
