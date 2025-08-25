@@ -83,7 +83,7 @@ export default function Navigation() {
         className="md:hidden fixed top-0 left-0 right-0 z-40 bg-white border-b border-gray-200/60 shadow-sm"
       >
         <div className="max-w-7xl mx-auto container-padding">
-          <div className="flex items-center h-16">
+          <div className="flex items-center justify-center h-20">
             {/* Mobile Logo */}
             <motion.div
               whileHover={{ scale: 1.05 }}
