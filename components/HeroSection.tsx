@@ -107,14 +107,14 @@ export default function HeroSection() {
             <motion.button
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="btn-primary text-base sm:text-base px-6 sm:px-7 py-3 sm:py-4 shadow-lg rounded-lg w-3/4 sm:w-auto"
+              className="btn-primary text-sm sm:text-base px-5 sm:px-7 py-2.5 sm:py-4 shadow-lg rounded-lg w-3/4 sm:w-auto"
             >
               Book a Demo
             </motion.button>
             <motion.button
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="btn-secondary text-base sm:text-base flex items-center justify-center shadow-md rounded-lg px-5 sm:px-6 py-3 sm:py-4 w-3/4 sm:w-auto"
+              className="btn-secondary text-sm sm:text-base flex items-center justify-center shadow-md rounded-lg px-4 sm:px-6 py-2.5 sm:py-4 w-3/4 sm:w-auto"
             >
               <Play className="w-5 h-5 flex flex-col justify-center items-center" />
               <span className="ml-2.5">Watch Now</span>
