@@ -63,7 +63,7 @@ export default function HeroSection() {
         />
       </div>
 
-    <div className="relative z-10 max-w-7xl mx-auto pt-20 md:pt-[26px] container-padding flex flex-col">
+    <div className="relative z-10 max-w-7xl mx-auto pt-32 sm:pt-20 md:pt-[26px] pb-16 sm:pb-8 container-padding flex flex-col">
   <div className="text-center max-w-full mx-auto flex flex-col">
           {/* Trust Indicators */}
           <motion.div
@@ -80,7 +80,7 @@ export default function HeroSection() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay: 0.2 }}
-            className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6 leading-tight text-left mx-auto"
+            className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6 leading-tight text-left"
           >
             Say hello to <span className="text-gradient">Stellar</span>
             <br />
@@ -107,14 +107,14 @@ export default function HeroSection() {
             <motion.button
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="btn-primary text-sm sm:text-base px-6 sm:px-7 py-3 sm:py-4 shadow-lg rounded-lg w-full sm:w-auto"
+              className="btn-primary text-base sm:text-base px-6 sm:px-7 py-3 sm:py-4 shadow-lg rounded-lg w-3/4 sm:w-auto"
             >
               Book a Demo
             </motion.button>
             <motion.button
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="btn-secondary text-sm sm:text-base flex items-center justify-center shadow-md rounded-lg px-5 sm:px-6 py-3 sm:py-4 w-full sm:w-auto"
+              className="btn-secondary text-base sm:text-base flex items-center justify-center shadow-md rounded-lg px-5 sm:px-6 py-3 sm:py-4 w-3/4 sm:w-auto"
             >
               <Play className="w-5 h-5 flex flex-col justify-center items-center" />
               <span className="ml-2.5">Watch Now</span>
