@@ -6,13 +6,15 @@
 @layer base {
   html {
     scroll-behavior: smooth;
+    overflow-x: hidden;
   }
-  
+
   body {
     font-family: 'Inter', system-ui, -apple-system, sans-serif;
     line-height: 1.7;
     font-weight: 400;
     color: #1f2937;
+    overflow-x: hidden;
   }
   
   h1, h2, h3, h4, h5, h6 {

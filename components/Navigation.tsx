@@ -55,7 +55,7 @@ export default function Navigation() {
                 <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary-600 transition-all duration-300 group-hover:w-full"></span>
               </motion.a>
             ))}
-            
+
           </div>
 
           {/* Tablet menu button */}
@@ -73,6 +73,28 @@ export default function Navigation() {
           </div>
         </div>
       </div>
+      </motion.nav>
+
+      {/* Mobile Navigation Bar */}
+      <motion.nav
+        initial={{ y: -100 }}
+        animate={{ y: scrolled ? -100 : 0 }}
+        transition={{ duration: 0.3 }}
+        className="md:hidden fixed top-0 left-0 right-0 z-40 bg-white border-b border-gray-200/60 shadow-sm"
+      >
+        <div className="max-w-7xl mx-auto container-padding">
+          <div className="flex items-center justify-center h-20">
+            {/* Mobile Logo */}
+            <motion.div
+              whileHover={{ scale: 1.05 }}
+              className="flex items-center space-x-3"
+            >
+              <div className="flex flex-col">
+                <span className="text-xl font-bold text-gray-900">Stellar AI</span>
+              </div>
+            </motion.div>
+          </div>
+        </div>
       </motion.nav>
 
       {/* Mobile Menu Button (floating) */}
