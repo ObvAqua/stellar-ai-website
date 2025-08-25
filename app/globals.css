@@ -85,7 +85,7 @@
   
 
   .container-padding {
-    @apply px-4 sm:px-6 lg:px-8;
+    @apply px-6 sm:px-8 md:px-10 lg:px-12 xl:px-8;
   }
 
   .text-balance {
@@ -238,4 +238,4 @@
     opacity: 1;
     transform: scale(1);
   }
-} 
+}
