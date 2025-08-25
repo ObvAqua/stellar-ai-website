@@ -185,26 +185,26 @@ const scrollRight = () => {
             variants={containerVariants}
             initial="hidden"
             animate={inView ? "visible" : "hidden"}
-            className="flex overflow-x-auto scrollbar-hide gap-6 pb-4 px-12 scroll-smooth"
+            className="flex overflow-x-auto scrollbar-hide gap-4 sm:gap-6 pb-4 px-8 sm:px-10 md:px-12 scroll-smooth"
             style={{ scrollSnapType: 'x mandatory' }}
           >
             {features.map((feature, index) => (
               <motion.div
                 key={feature.title}
                 variants={itemVariants}
-                className="card p-6 group hover:shadow-2xl transition-all duration-500 border-0 flex-shrink-0 w-80"
+                className="card p-4 sm:p-6 group hover:shadow-2xl transition-all duration-500 border-0 flex-shrink-0 w-72 sm:w-80"
                 style={{ scrollSnapAlign: 'start' }}
               >
                 {/* Icon */}
                 <motion.div
                   whileHover={{ scale: 1.1, rotate: 5 }}
-                  className={`w-16 h-16 ${feature.bgColor} rounded-xl flex items-center justify-center mb-6 group-hover:shadow-lg transition-all duration-300`}
+                  className={`w-12 h-12 sm:w-16 sm:h-16 ${feature.bgColor} rounded-xl flex items-center justify-center mb-4 sm:mb-6 group-hover:shadow-lg transition-all duration-300`}
                 >
-                  <feature.icon className={`w-8 h-8 ${feature.color}`} />
+                  <feature.icon className={`w-6 h-6 sm:w-8 sm:h-8 ${feature.color}`} />
                 </motion.div>
 
                 {/* Title */}
-                <h3 className="text-xl font-bold text-gray-900 mb-4 leading-tight">
+                <h3 className="text-lg sm:text-xl font-bold text-gray-900 mb-3 sm:mb-4 leading-tight">
                   {feature.title}
                 </h3>
 
